@@ -103,8 +103,8 @@ Check the API server at `API_DOMAIN` as configured in `.env`, and access the Tra
 Ensure that `.env` contains the following configuration:
 
 ```plaintext
-API_DOMAIN=your-api-domain.com
-TRAEFIK_DOMAIN=your-traefik-dashboard-domain.com
+API_DOMAIN=your-api-domain.com # make sure to update your DNS records
+TRAEFIK_DOMAIN=your-traefik-dashboard-domain.com # make sure to update your DNS records
 TRAEFIK_USER=
 TRAEFIK_PASSWORD=
 EMAIL=

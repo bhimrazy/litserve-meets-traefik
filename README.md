@@ -1,6 +1,9 @@
-# LitServe meets Traefik
-
-Deploying LitServe with Traefik Using Docker Compose.
+<div align="center">
+  <h1>LitServe meets Traefik</h1>
+  <img src="https://github.com/bhimrazy/litserve-meets-traefik/assets/46085301/c749d77e-3a7a-4101-ad27-1ed2252802c8" alt="LitServe meets Traefik" width="640" height="360">
+   <br/>
+   <br/>
+</div>
 
 LitServe is a high-throughput serving engine for deploying AI models at scale, while Traefik is a modern HTTP reverse proxy and load balancer that simplifies microservices deployment.
 

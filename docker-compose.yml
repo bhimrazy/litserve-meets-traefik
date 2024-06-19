@@ -18,8 +18,6 @@ services:
   lit-api:
     build: .
     container_name: "lit-api"
-    ports:
-      - "8000:8000"
     networks:
       - lit-network
     labels:

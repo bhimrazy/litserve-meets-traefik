@@ -141,6 +141,7 @@ htpasswd -nbB yourusername yourpassword
 
 - [LitServe](https://github.com/Lightning-AI/LitServe)
 - [Traefik Docker Compose Configuration](https://doc.traefik.io/traefik/user-guides/docker-compose/acme-tls/)
+- [FastAPI in Containers - Docker](https://fastapi.tiangolo.com/deployment/docker/)
 
 ## Contributing
 

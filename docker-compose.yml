@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  traefik:
+    image: traefik:v3.0
+    container_name: "traefik"
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entryPoints.web.address=:80"
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+
+  lit-api:
+    build: .
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.simple-lit-api.rule=Host(`litapi.localhost`)"
+      - "traefik.http.services.simple-lit-api.loadbalancer.server.port=8000"

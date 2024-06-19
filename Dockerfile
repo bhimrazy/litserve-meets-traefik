@@ -7,6 +7,15 @@ ENV PYTHONUNBUFFERED=1
 # Set the working directory in the container
 WORKDIR /app
 
+# Create a non-root user
+RUN groupadd -r appuser && useradd -r -g appuser appuser
+
+# Change ownership of the working directory to the non-root user
+RUN chown -R appuser:appuser /app
+
+# Switch to the non-root user
+USER appuser
+
 # Copy requirements.txt file to the container at /app
 COPY ./requirements.txt /app/requirements.txt
 

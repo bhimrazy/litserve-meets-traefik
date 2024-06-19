@@ -16,6 +16,9 @@ RUN groupadd -r $APP_USER && useradd -r -g $APP_USER $APP_USER \
 # Set the working directory
 WORKDIR $APP_HOME
 
+# Switch to the appuser
+USER $APP_USER
+
 # Copy requirements.txt file to the container at /app
 COPY ./requirements.txt .
 

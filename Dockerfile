@@ -4,21 +4,8 @@ FROM python:3.11-slim
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-# Set environment variables
-ENV APP_USER=appuser
-ENV APP_HOME=/app
-
-# Create the appuser
-RUN groupadd -r $APP_USER && useradd -r -g $APP_USER $APP_USER \
-    && mkdir -p $APP_HOME \
-    && chown -R $APP_USER:$APP_USER $APP_HOME \
-    && chown -R $APP_USER:$APP_USER /home/$APP_USER
-
 # Set the working directory
-WORKDIR $APP_HOME
-
-# Switch to the appuser
-USER $APP_USER
+WORKDIR /app
 
 # Copy requirements.txt file to the container at /app
 COPY ./requirements.txt .

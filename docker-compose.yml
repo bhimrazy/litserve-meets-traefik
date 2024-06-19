@@ -22,8 +22,8 @@ services:
       - lit-network
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.simple-lit-api.rule=Host(`litapi.localhost`)"
-      - "traefik.http.services.simple-lit-api.loadbalancer.server.port=8000"
+      - "traefik.http.routers.lit-api.rule=Host(`litapi.localhost`)"
+      - "traefik.http.services.lit-api.loadbalancer.server.port=8000"
 
 networks:
   lit-network:

@@ -1,5 +1,6 @@
 <div align="center">
   <h1>LitServe meets Traefik</h1>
+  <p>Deploy LitServe API with Traefik Using Docker Compose</p>
   <img src="https://github.com/bhimrazy/litserve-meets-traefik/assets/46085301/c749d77e-3a7a-4101-ad27-1ed2252802c8" alt="LitServe meets Traefik" width="640" height="360">
    <br/>
    <br/>

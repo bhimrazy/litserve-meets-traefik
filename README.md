@@ -5,7 +5,7 @@
    <br/>
 </div>
 
-LitServe is a high-throughput serving engine for deploying AI models at scale, while Traefik is a modern HTTP reverse proxy and load balancer that simplifies microservices deployment.
+[LitServe](https://github.com/Lightning-AI/LitServe) is a high-throughput serving engine for deploying AI models at scale, while Traefik is a modern HTTP reverse proxy and load balancer that simplifies microservices deployment.
 
 ## Table of Contents
 
